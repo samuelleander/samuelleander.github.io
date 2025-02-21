@@ -66,7 +66,7 @@ export default function Home() {
         </table>
 
         <p className="text-sm text-gray-500">
-          * Data is for demonstration. Real-time data can be fetched from Firebase or an API.
+          * Data is for demonstration. Skibidi Hair sir.
         </p>
       </main>
 
