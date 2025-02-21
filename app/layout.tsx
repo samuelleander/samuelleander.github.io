@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RSETAQI",
+  title: "aqi",
   description: "Rajagiri Air Quality Index",
 };
 
