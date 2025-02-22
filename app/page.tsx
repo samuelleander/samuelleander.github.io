@@ -66,7 +66,7 @@ export default function Home() {
         </table>
 
         <p className="text-sm text-gray-500">
-          * Data is for demonstration. Skibidi Hari sir.
+          * Data is for demonstration. Skibidi Hari sir UwU sigma boy.
         </p>
       </main>
 
