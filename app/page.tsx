@@ -31,7 +31,15 @@ const DATA_BLOCKS = [
   { name: 'Temperature', symbol: 'Air Temperature', value: 27, unit: '°C', icon: <ThermometerIcon className="w-5 h-5 text-red-400" /> }
 ];
 
-const DataCard = ({ name, symbol, value, unit, icon }) => (
+interface DataCardProps {
+  name: string;
+  symbol: string;
+  value: number | string;
+  unit: string;
+  icon: React.ReactNode; // Works with any React component, including elements
+}
+
+const DataCard: React.FC<DataCardProps> = ({ name, symbol, value, unit, icon }) => (
   <div className="relative bg-gray-800 text-white border-gray-500 border-2 rounded-lg p-3 shadow-md h-24 flex flex-col justify-center
     transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gray-700">
     <div className="flex justify-between items-center mb-1">
@@ -49,6 +57,7 @@ const DataCard = ({ name, symbol, value, unit, icon }) => (
     </div>
   </div>
 );
+
 
 const AQIMonitor: React.FC = () => {
   const [currentAQI, setCurrentAQI] = useState(91);
